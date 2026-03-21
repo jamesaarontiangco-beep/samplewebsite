@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact ApexBuild | Get a Construction Quote</title>
+
+<meta name="description" content="Contact ApexBuild Construction to discuss your residential or commercial construction project. Request a quote or consultation with our experienced team.">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="contact-hero">
+
+<header class="header">
+
+
+<div class="container nav">
+
+<div class="logo">
+<a href="index.html">
+<img src="apex-text-logo-white.png" alt="ApexBuild Logo">
+</a>
+</div>
+
+<nav>
+
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<ul class="menu" id="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<div class="container contact-hero-content animate-up">
+
+<h1 class="section-title">Get in Touch</h1>
+
+<p class="section-subtitle">
+Have a project in mind? Tell us about it and our team will get back to you within 24 hours.
+</p>
+
+
+<div class="contact-grid">
+
+<!-- CONTACT INFO -->
+
+<div class="contact-info reveal">
+
+<div class="info-item">
+<h3>Phone</h3>
+<p>(123) 456-7890</p>
+</div>
+
+<div class="info-item">
+<h3>Email</h3>
+<p>info@apexbuild.com</p>
+</div>
+
+<div class="info-item">
+<h3>Office</h3>
+<p>
+123 Construction Ave<br>
+Makati City, Metro Manila
+</p>
+</div>
+
+<div class="info-item">
+<h3>Hours</h3>
+<p>Mon – Sat : 8:00 AM – 6:00 PM</p>
+</div>
+
+</div>
+
+
+<!-- CONTACT FORM -->
+
+<div class="contact-form reveal">
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea placeholder="Tell us about your project"></textarea>
+
+<button type="submit" class="btn-primary">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- MAP -->
+
+<section class="contact-map">
+
+<iframe
+src="https://www.google.com/maps?q=makati%20city&output=embed"
+loading="lazy">
+</iframe>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container footer-top reveal">
+
+<div class="footer-col">
+
+<img src="apex-text-logo-white.png" class="footer-logo">
+
+<p>
+Professional residential construction and renovation services.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Office</h4>
+
+<p>
+123 Construction Ave<br>
+Makati City, Metro Manila<br>
+Philippines
+</p>
+
+<p>
+Phone: <a href="tel:+639000000000">+63 900 000 0000</a>
+</p>
+
+<p>
+Email: <a href="mailto:info@apexbuild.com">info@apexbuild.com</a>
+</p>
+
+<p>
+Mon – Sat: 8:00 AM – 6:00 PM
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Follow Us</h4>
+
+<div class="social-icons">
+
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+</div>
+
+<div class="certifications">
+<img src="images/pcab-logo.png" alt="PCAB">
+<img src="images/iso-logo.png" alt="ISO">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom reveal">
+<div class="container">
+
+<p>© 2026 ApexBuild Construction. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+let header = document.querySelector(".header");
+
+if(window.scrollY > 50){
+header.classList.add("scrolled");
+}else{
+header.classList.remove("scrolled");
+}
+
+});
+
+</script>
+
+
+<script>
+
+function revealOnScroll(){
+
+const reveals = document.querySelectorAll(".reveal");
+
+reveals.forEach((el)=>{
+
+const windowHeight = window.innerHeight;
+const elementTop = el.getBoundingClientRect().top;
+
+const revealPoint = 120;
+
+if(elementTop < windowHeight - revealPoint){
+el.classList.add("active");
+}
+
+});
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+hamburger.addEventListener("click", function(){
+menu.classList.toggle("active");
+});
+
+});
+
+</script>
+
+</body>
+</html>
