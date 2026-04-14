@@ -1868,11 +1868,10 @@ text-align:center;
 }
 
 .trust{
-  position:relative;
-  bottom:auto;
-  left:auto;
-  transform:none;
-  margin-top:30px;
+  position:static;   /* 🔥 this is the key fix */
+  width:92%;
+  margin:30px auto 0;
+  padding:12px 10px;
 }
 
 .hero-content{
