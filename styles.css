@@ -1860,6 +1860,21 @@ justify-content:center;
 text-align:center;
 }
 
+.hero{
+  height:auto;
+  min-height:100vh;
+  padding-top:120px;
+  padding-bottom:140px;
+}
+
+.trust{
+  position:relative;
+  bottom:auto;
+  left:auto;
+  transform:none;
+  margin-top:30px;
+}
+
 .hero-content{
 margin:auto;
 }
